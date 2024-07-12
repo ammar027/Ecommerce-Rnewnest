@@ -1,2 +1,3 @@
 # Ecommerce-Aromia
-Ecommerce Website 
+Ecommerce Website displaying Eco-Friendly Products
+
