@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Buy Page</title>
+
+    <style>
+        /* Add your styles for the buy page here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.product-details {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.product-details img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+.product-info {
+    flex: 1;
+}
+
+.checkout {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 0.5rem;
+}
+
+input,
+textarea {
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #51a9e6;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Product Name</h1>
+    </header>
+    <main>
+        <section class="product-details">
+            <img src="product-image.jpg" alt="Product Image">
+            <div class="product-info">
+                <h2>Product Name</h2>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $99.99</p>
+            </div>
+        </section>
+        <section class="checkout">
+            <h2>Checkout</h2>
+            <form action="process_purchase.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
